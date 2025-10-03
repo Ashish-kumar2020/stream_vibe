@@ -10,3 +10,8 @@ export interface YouOptions {
   title: string;
   icon: JSX.Element;
 }
+
+export interface Explore{
+  title: string;
+  icon: JSX.Element;
+}
