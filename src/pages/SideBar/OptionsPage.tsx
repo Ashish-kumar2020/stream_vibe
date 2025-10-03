@@ -1,8 +1,9 @@
-import type { Option } from "../../types/OptionsTypes";
+import type { Option , YouOptions} from "../../types/OptionsTypes";
 
+type others = Option | YouOptions
 
 interface OptionPageProps {
-    option: Option,
+    option: others,
     selected: string,
     setSelected: (title: string) => void;
 }

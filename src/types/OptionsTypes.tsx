@@ -5,3 +5,8 @@ export interface Option {
   icon: JSX.Element;
   default: boolean;
 }
+
+export interface YouOptions {
+  title: string;
+  icon: JSX.Element;
+}
