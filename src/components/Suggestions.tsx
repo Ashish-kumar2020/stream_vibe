@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SuggestionPage from "../pages/Suggestion/SuggestionPage";
 
 const Suggestions = () => {
   const suggestion = [
@@ -32,19 +33,12 @@ const Suggestions = () => {
     <div className="mt-1 h-12 w-full flex items-center overflow-x-auto no-scrollbar">
       <div className="flex space-x-2 px-2">
         {suggestion.map((t, index) => (
-          <div
-            onClick={() => setSelected(t.title)}
-            key={index}
-            className={`inline-flex items-center h-[32px] px-3 border bg-gray-200 rounded-[8px] cursor-pointer text-sm whitespace-nowrap ${
-              selected === t.title
-                ? "bg-gray-300 font-medium"
-                : "border-transparent hover:bg-gray-300"
-            }`}
-          >
-            <span key={t.title} className="">
-              {t.title}
-            </span>
-          </div>
+         <SuggestionPage
+            t={t}
+            selected={selected}
+            setSelected={setSelected}
+            index={index}
+         />
         ))}
       </div>
     </div>
