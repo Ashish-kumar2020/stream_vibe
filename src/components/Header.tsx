@@ -17,7 +17,7 @@ const Header = () => {
           <input
             id="searchbar"
             type="text"
-            className="h-[40px] w-[500px] rounded-l-full border border-gray-300 pl-10 pr-4 focus:outline-none"
+            className="h-[40px] w-[500px] text-[14px] rounded-l-full border border-gray-300 pl-10 pr-4 focus:outline-none"
             placeholder="Search"
           />
         </div>
@@ -29,11 +29,11 @@ const Header = () => {
         </div>
       </div>
 
-      
+
       <div className="flex items-center space-x-5">
         <div className="flex items-center gap-2 px-3 h-[40px] border border-gray-300 rounded-full cursor-pointer bg-gray-100 hover:bg-gray-200">
           <Plus className="w-5 h-5" />
-          <span className="text-sm font-medium">Create</span>
+          <span className="text-sm font-medium text-[14px]">Create</span>
         </div>
         <BellDot className="w-6 h-6 cursor-pointer" />
         <UserRoundPen className="w-6 h-6 cursor-pointer" />
