@@ -10,16 +10,14 @@ const MainPage = () => {
         <Header />
       </div>
 
-      <div className="flex flex-1 overflow-y-scroll">
-        <SideNavBar />
-
-        {/* Right Section */}
+      <div className="flex flex-1">
+        <div className="h-full overflow-y-auto">
+          <SideNavBar />
+        </div>
         <div className="flex-1 flex flex-col overflow-hidden">
-          <div className="z-10 bg-white border-b">
+          <div className="sticky z-10 bg-white border-b">
             <Suggestions />
           </div>
-
-          {/* Video Feed scrollable */}
           <div className="flex-1 overflow-y-auto p-4">
             <Outlet />
           </div>
