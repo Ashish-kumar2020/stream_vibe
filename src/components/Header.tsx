@@ -5,7 +5,7 @@ const Header = () => {
     <div className="w-full h-[60px] flex justify-between items-center px-4 shadow-sm">
       <div className="flex items-center space-x-4">
         <Menu className="cursor-pointer w-6 h-6" />
-        <span className="font-bold text-lg cursor-pointer">StreamVibe</span>
+        <span className="font-bold text-lg cursor-pointer"><span className="text-red-600">Stream </span> Vibe</span>
       </div>
 
 

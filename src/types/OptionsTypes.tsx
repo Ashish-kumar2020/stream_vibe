@@ -15,3 +15,8 @@ export interface Explore{
   title: string;
   icon: JSX.Element;
 }
+
+export interface Suggestions {
+  title: string,
+  default: boolean
+}
