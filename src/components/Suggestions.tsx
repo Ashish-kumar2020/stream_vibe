@@ -34,6 +34,7 @@ const Suggestions = () => {
       <div className="flex space-x-2 px-2">
         {suggestion.map((t, index) => (
          <SuggestionPage
+            key={index}
             t={t}
             selected={selected}
             setSelected={setSelected}
